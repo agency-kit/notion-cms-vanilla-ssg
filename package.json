@@ -1,0 +1,16 @@
+{
+  "name": "notion-cms-vanilla-ssg",
+  "version": "1.0.0",
+  "description": "vanilla js + NotionCMS Static Site Generator",
+  "main": "build.js",
+  "type": "module",
+  "scripts": {
+    "build": "env $(cat .env | xargs) node src/build.js",
+    "serve": "node src/serve.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@agency-kit/notion-cms": "^0.8.1"
+  }
+}
